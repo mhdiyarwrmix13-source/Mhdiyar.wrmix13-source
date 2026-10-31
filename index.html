@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title> Happy Birthday Znb</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="locked">
+
+  <!-- پس‌زمینه -->
+  <div class="glow g1"></div><div class="glow g2"></div><div class="glow g3"></div>
+  <div class="rays" id="rays"></div>
+  <canvas id="snow"></canvas>
+  <div id="balloons"></div>
+  <div id="flash"></div>
+
+  <!-- ================= صحنه‌ی پاکت ================= -->
+  <section id="scene">
+    <div class="scene-glow"></div>
+    <p class="scene-title"> افتخار میدی پاکتو بازش کنی؟</p>
+
+    <div class="env-wrap" id="envWrap">
+      <div class="env" id="env">
+        <div class="env-back"></div>
+        <div class="letter"><span>💙</span>Happy Birthday SQI </div>
+        <div class="pocket p-left"></div>
+        <div class="pocket p-right"></div>
+        <div class="pocket p-bottom"></div>
+        <div class="flap"></div>
+        <div class="seal">❤</div>
+      </div>
+    </div>
+
+    <div class="hint" id="hint">بزنی روش باز میشه✨</div>
+  </section>
+
+  <!-- ================= محتوای اصلی ================= -->
+  <main class="content" id="content">
+
+    <!-- عنوان (اینجا رو عوض کن) -->
+    <header class="hero">
+      <h1 class="title" id="title" data-text="  banyez yadhtriB yppaH"></h1>
+      <p class="subtitle">   1405/08/08 </p>
+      <div class="divider"><span>❤</span></div>
+    </header>
+
+    <!-- باکس متن (متنت رو داخل همین تگ بنویس) -->
+    <section class="card tilt">
+      <div class="card-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="card-label">پیام من</span></div>
+      <div class="message-text" id="messageText">
+        سلام زیبا ،  حالت چطوره؟
+امیدوارم امروز بهترین روزت باشه و کلی حس خوب رو تجربه کنی         
+از ته دلم آرزو میکنم سال جدید زندگیت پر از اتفاقای قشنگ،خبرای خوب و خنده های ازته دل باشه ، 
+هیچ آرزویی توی دلت حسرت نشه و هیچ سختیی نتونه امیدتو به روزای خوب ازت بگیره
+محبت واقعی روتجربه کنی وهمیشه بدونی که چقدرر ارزشمندی
+ امیدوارم این تبریک کوچیک من ، بتونه لبخند رو روی لبات بیاره
+تولدت مبارک باشه قلب / 1405/08/10
+
+      </div>
+    </section>
+
+    <!-- باکس ویدئو (اسم فایل ویدئوت رو در src بنویس) -->
+    <section class="card tilt">
+      <div class="card-head"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="card-label">ویدئوی من</span></div>
+      <div class="video-wrap">
+        <video id="mainVideo" controls playsinline preload="metadata">
+          <source src="document_5989955974494952635.mp4" type="video/mp4" />
+        </video>
+        <div class="video-placeholder" id="videoPlaceholder">
+          <span>🎬</span>
+          <p>فایل ویدئو رو با نام <b>video.mp4</b> کنار این فایل بذار</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="toolbar">
+      <button class="btn" id="btnBalloons">🎈 بادکنک</button>
+      <button class="btn" id="btnType">✨ تایپ دوباره</button>
+      <button class="btn" id="btnMusic">🎵 موزیک</button>
+      <button class="btn" id="btnFull">⛶ تمام‌صفحه</button>
+    </nav>
+
+    <footer class="foot"> از طرف مهدیار</footer>
+  </main>
+
+  <canvas id="fx"></canvas>
+
+  <!-- موزیک اختیاری: فایل music.mp3 رو کنار این فایل بذار -->
+  <audio id="bgMusic" src="Obsessed With Your Eyes (1).mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
